@@ -1,0 +1,35 @@
+{
+  "name": "ssd-web-application",
+  "version": "1.0.0",
+  "description": "Group Assignment - SSD",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "Raveena - Admin login/Dashboard",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "concurrently": "^7.5.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "date-fns": "^2.29.1",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-async-errors": "^3.1.1",
+    "express-rate-limit": "^6.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.0",
+    "mongoose-sequence": "^5.3.1",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}

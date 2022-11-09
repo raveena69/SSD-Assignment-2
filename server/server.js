@@ -53,3 +53,17 @@ mongoose.connection.on('error', err => {
     console.log(err)
     logEvents(`${err.no}: ${err.code}\t${err.syscall}\t${err.hostname}`, 'mongoErrLog.log')
 })
+
+// const https = require('https')
+// const fs = require('fs')
+
+// app.use('/', (req, res, next) => {
+//     res.send('Hello from SSL server')
+// })
+
+// const sslServer = https.createServer({
+//     key: fs.readFileSync(path.join(__dirname, 'cert', 'key.pem')),
+//     cert: fs.readFileSync(path.join(__dirname, 'cert', 'cert.pem')),
+// })
+
+// sslServer.listen(3001, () => console.log('Secure server 🚀🔑 on port 3001'))
